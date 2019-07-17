@@ -1,5 +1,5 @@
 {
-  "name": "smi2/phpclickhouse",
+  "name": "wolfsoft/phpclickhouse",
   "type": "library",
   "description": "PHP ClickHouse Client",
   "keywords": ["clickhouse", "driver", "client", "curl", "http", "HTTP client", "php"],
