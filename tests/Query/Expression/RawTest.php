@@ -10,14 +10,14 @@ use PHPUnit\Framework\TestCase;
 
 final class RawTest extends TestCase
 {
-    public function testNeedsEncoding() : void
+    public function testNeedsEncoding()
     {
         self::assertEquals(
             false,
             (new Expression\Raw(''))->needsEncoding()
         );
     }
-    public function testGetValue() : void
+    public function testGetValue()
     {
         $expressionString = "UUIDStringToNum('0f372656-6a5b-4727-a4c4-f6357775d926')";
         $expressionObject = new Expression\Raw($expressionString);
@@ -28,7 +28,7 @@ final class RawTest extends TestCase
         );
     }
 
-    public function testExpressionValueForInsert() : void
+    public function testExpressionValueForInsert()
     {
         $expressionString = "UUIDStringToNum('0f372656-6a5b-4727-a4c4-f6357775d926')";
         $preparedValue    = FormatLine::Insert([new Expression\Raw($expressionString)]);

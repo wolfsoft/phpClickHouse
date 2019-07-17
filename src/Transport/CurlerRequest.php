@@ -627,7 +627,7 @@ class CurlerRequest
         return $this->response !== null;
     }
 
-    public function setResponse(CurlerResponse $response) : void
+    public function setResponse(CurlerResponse $response)
     {
         $this->response = $response;
     }
